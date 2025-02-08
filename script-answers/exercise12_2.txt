@@ -1,0 +1,16 @@
+Script started on Thu Feb  6 12:54:53 2025
+[1m[7m%[27m[1m[0m                                                                       [0m[27m[24m[Jiisakki@Iisakki-Max part12-containers-applications % [K[?2004hddocker run -it ubu [Knntu bash[?2004l
+Unable to find image 'ubuntu:latest' locally
+latest: Pulling from library/ubuntu
+
+[1A[2K5b17151e9710: Pulling fs layer [1B[1A[2K5b17151e9710: Downloading  3.146MB/28.89MB[1B[1A[2K5b17151e9710: Downloading  4.194MB/28.89MB[1B[1A[2K5b17151e9710: Downloading   7.34MB/28.89MB[1B[1A[2K5b17151e9710: Downloading  9.437MB/28.89MB[1B[1A[2K5b17151e9710: Downloading  12.58MB/28.89MB[1B[1A[2K5b17151e9710: Downloading  14.68MB/28.89MB[1B[1A[2K5b17151e9710: Downloading  17.83MB/28.89MB[1B[1A[2K5b17151e9710: Downloading  19.92MB/28.89MB[1B[1A[2K5b17151e9710: Downloading  23.07MB/28.89MB[1B[1A[2K5b17151e9710: Downloading  24.12MB/28.89MB[1B[1A[2K5b17151e9710: Downloading  27.26MB/28.89MB[1B[1A[2K5b17151e9710: Download complete [1BDigest: sha256:72297848456d5d37d1262630108ab308d3e9ec7ed1c3286a32fe09856619a782
+Status: Downloaded newer image for ubuntu:latest
+[?2004h]0;root@f08d92b153d4: /root@f08d92b153d4:/# mkdir /usr/src/app
+[?2004l[?2004h]0;root@f08d92b153d4: /root@f08d92b153d4:/# touch /usr/s
+sbin/  share/ src/   
+]0;root@f08d92b153d4: /root@f08d92b153d4:/# touch /usr/src/app/index.js
+[?2004l[?2004h]0;root@f08d92b153d4: /root@f08d92b153d4:/# [Kexit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                       [0m[27m[24m[Jiisakki@Iisakki-Max part12-containers-applications % [K[?2004heexit[?2004l
+
+Script done on Thu Feb  6 12:57:28 2025

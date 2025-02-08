@@ -1,7 +1,9 @@
-const express = require('express');
-const router = express.Router();
+const express = require('express')
+const router = express.Router()
 
 const configs = require('../util/config')
+const redis = require('../redis')
+const { Todo } = require('../mongo')
 
 let visits = 0
 
@@ -11,8 +13,14 @@ router.get('/', async (req, res) => {
 
   res.send({
     ...configs,
-    visits
-  });
-});
+    visits,
+  })
+})
 
-module.exports = router;
+router.get('/statistics', async (req, res) => {
+  res.send({
+    added_todos: parseInt((await redis.getAsync('added_todos')) || 0),
+  })
+})
+
+module.exports = router
