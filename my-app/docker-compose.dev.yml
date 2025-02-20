@@ -1,0 +1,22 @@
+services:
+  app:
+    image: dev-silo-front
+    build:
+      context: ./frontend/ # The context will pick this directory as the "build context"
+      dockerfile: dev.Dockerfile # This will simply tell which dockerfile to read
+    container_name: dev-silo-front # This will name the container hello-front-dev
+  server:
+    image: dev-silo-back
+    build:
+      context: ./backend/
+      dockerfile: dev.Dockerfile
+    container_name: dev-silo-back
+  nginx:
+    image: nginx
+    ports:
+      - 8080:80
+    volumes:
+      - ./nginx.dev.conf:/etc/nginx/nginx.conf:ro
+    depends_on:
+      - app
+    container_name: reverse-proxy
